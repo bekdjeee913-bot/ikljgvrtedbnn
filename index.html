@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gonzales — Recoil Control Trainer for R6 Siege</title>
+  <meta
+    name="description"
+    content="Gonzales is a free, fan-made recoil control trainer for Tom Clancy's Rainbow Six Siege — per-gun spray patterns, drill mode, and a printable cheat sheet."
+  />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">◈</span>
+        GONZALES
+        <span class="brand-sub">// recoil trainer</span>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#download">Download</a>
+      </nav>
+      <span class="version-tag">v2.4.1</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow">Recoil control trainer for R6 Siege</div>
+          <h1>Stop fighting<br /><span class="accent">your recoil.</span></h1>
+          <p class="lede">
+            Gonzales maps the real spray pattern for every primary weapon in
+            Siege and turns it into drills you can actually remember
+            mid-round — so your shots stay on the operator, not the
+            ceiling.
+          </p>
+          <div class="hero-ctas">
+            <a href="thanks.html" class="btn btn-primary" data-download>
+              Download for Windows
+              <span class="btn-arrow">▸</span>
+            </a>
+            <a
+              href="https://github.com/YOUR-USERNAME/YOUR-REPO"
+              class="btn btn-ghost"
+              target="_blank"
+              rel="noopener"
+            >
+              View source on GitHub
+            </a>
+          </div>
+          <p class="hero-note">Windows 10/11 · free · no account needed</p>
+        </div>
+
+        <div class="recoil-panel bracket">
+          <span class="b-tr"></span><span class="b-bl"></span>
+          <div class="recoil-panel-head">
+            <span>SPRAY PATTERN // R4-C</span>
+            <span class="live">● TRACKING</span>
+          </div>
+
+          <svg
+            class="recoil-svg"
+            viewBox="0 0 440 260"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Chart comparing an uncontrolled, jagged recoil spray pattern on the left against a tight, controlled pattern trained with Gonzales on the right"
+          >
+            <defs>
+              <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+                <path d="M22 0H0V22" fill="none" stroke="#1d2129" stroke-width="1" />
+              </pattern>
+            </defs>
+            <rect x="0" y="0" width="440" height="260" fill="url(#grid)" />
+            <line x1="0" y1="225" x2="440" y2="225" stroke="#262b33" stroke-width="1" />
+
+            <!-- raw / uncontrolled pattern -->
+            <path
+              class="draw-path"
+              d="M120,225 L145,195 L95,170 L150,140 L85,112 L150,85 L90,60 L125,38"
+              fill="none"
+              stroke="#ff8b7a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle class="draw-dot" cx="108" cy="34" r="3" fill="#ff8b7a" />
+            <circle class="draw-dot" cx="135" cy="30" r="3" fill="#ff8b7a" />
+            <circle class="draw-dot" cx="120" cy="46" r="3" fill="#ff8b7a" />
+            <circle class="draw-dot" cx="145" cy="40" r="3" fill="#ff8b7a" />
+            <circle class="draw-dot" cx="100" cy="50" r="3" fill="#ff8b7a" />
+
+            <!-- trained / Gonzales pattern -->
+            <path
+              class="draw-path"
+              d="M300,225 L304,192 L297,160 L302,128 L298,96 L301,64 L299,42"
+              fill="none"
+              stroke="#7cffb2"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle class="draw-dot" cx="297" cy="40" r="3" fill="#7cffb2" />
+            <circle class="draw-dot" cx="302" cy="44" r="3" fill="#7cffb2" />
+            <circle class="draw-dot" cx="299" cy="46" r="3" fill="#7cffb2" />
+            <circle class="draw-dot" cx="301" cy="39" r="3" fill="#7cffb2" />
+
+            <text x="120" y="248" text-anchor="middle" fill="#ff8b7a" font-family="JetBrains Mono, monospace" font-size="11">RAW</text>
+            <text x="300" y="248" text-anchor="middle" fill="#7cffb2" font-family="JetBrains Mono, monospace" font-size="11">GONZALES</text>
+          </svg>
+
+          <div class="recoil-legend">
+            <span class="raw">✕ scattered, unpredictable</span>
+            <span class="trained">✓ tight, repeatable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAT STRIP -->
+    <section class="stat-strip">
+      <div class="wrap">
+        <div class="stat">
+          <span class="num">20+</span>
+          <span class="label">Primary weapons mapped</span>
+        </div>
+        <div class="stat">
+          <span class="num">100%</span>
+          <span class="label">Free &amp; open source</span>
+        </div>
+        <div class="stat">
+          <span class="num">0</span>
+          <span class="label">Accounts or sign-ups</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Briefing</div>
+          <h2>Everything you need to hold an angle.</h2>
+          <p>
+            No gimmicks — just clear pattern data and a way to actually
+            practice it before you queue into a match.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <span class="tag">01 — DATA</span>
+            <h3>Per-gun pattern maps</h3>
+            <p>
+              See the exact spray path for every primary weapon, so you
+              know which way to pull before you fire a single round.
+            </p>
+          </div>
+          <div class="card">
+            <span class="tag">02 — PRACTICE</span>
+            <h3>Drill mode</h3>
+            <p>
+              Practice against the real pattern with a timed pull guide
+              until the counter-movement is muscle memory.
+            </p>
+          </div>
+          <div class="card">
+            <span class="tag">03 — LOADOUT</span>
+            <h3>Attachment-aware</h3>
+            <p>
+              Patterns update for your muzzle brake, vertical grip, or
+              angled grip — trained for the loadout you actually run.
+            </p>
+          </div>
+          <div class="card">
+            <span class="tag">04 — REFERENCE</span>
+            <h3>Printable cheat sheet</h3>
+            <p>
+              Export a quick-reference sheet for your main operators and
+              keep it on a second monitor during warm-up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Getting started</div>
+          <h2>Three steps to a tighter spray.</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <h3>Install Gonzales</h3>
+            <p>Run the installer — no extra dependencies, no account.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <h3>Pick your loadout</h3>
+            <p>Choose your gun and attachments to load the right pattern.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <h3>Drill the pattern</h3>
+            <p>Run drill mode until the pull feels automatic, then queue up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPLOY / DOWNLOAD -->
+    <section class="deploy" id="download">
+      <div class="wrap">
+        <div class="deploy-panel bracket">
+          <span class="b-tr"></span><span class="b-bl"></span>
+          <div>
+            <div class="eyebrow">Deploy</div>
+            <h2>Get Gonzales on your rig.</h2>
+            <p>
+              Free and open source. Download the installer and you'll be
+              drilling patterns in under a minute.
+            </p>
+            <div class="hero-ctas">
+              <a href="thanks.html" class="btn btn-primary" data-download>
+                Download for Windows
+                <span class="btn-arrow">▸</span>
+              </a>
+            </div>
+          </div>
+          <div class="spec-sheet">
+            <div class="spec-row"><span>Platform</span><span>Windows 10 / 11 (64-bit)</span></div>
+            <div class="spec-row"><span>Version</span><span>v2.4.1</span></div>
+            <div class="spec-row"><span>Download size</span><span>~24 MB</span></div>
+            <div class="spec-row"><span>License</span><span>Free</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="disclaimer">
+        Gonzales is a fan-made training tool and isn't affiliated with,
+        endorsed by, or sponsored by Ubisoft. Tom Clancy's Rainbow Six
+        Siege is a trademark of Ubisoft Entertainment.
+      </p>
+      <div class="foot-links">
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO/issues" target="_blank" rel="noopener">Report an issue</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
